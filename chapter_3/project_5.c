@@ -29,12 +29,11 @@ int main(void) {
   int dsum0 = i0 + i5 + i10 + i15;
   int dsum1 = i3 + i6 + i9 + i12;
 
-  printf("\n");
-  printf("%2d %2d %2d %2d\n", i0, i1, i2, i3);
+  printf("\n%2d %2d %2d %2d\n", i0, i1, i2, i3);
   printf("%2d %2d %2d %2d\n", i4, i5, i6, i7);
   printf("%2d %2d %2d %2d\n", i8, i9, i10, i11);
-  printf("%2d %2d %2d %2d\n", i12, i13, i14, i15);
-  printf("\n");
+  printf("%2d %2d %2d %2d\n\n", i12, i13, i14, i15);
+
   printf("Row sums: %d %d %d %d\n", rsum0, rsum1, rsum2, rsum3);
   printf("Column sums: %d %d %d %d\n", csum0, csum1, csum2, csum3);
   printf("Diagonal sums: %d %d\n", dsum0, dsum1);

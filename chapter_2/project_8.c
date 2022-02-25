@@ -20,11 +20,9 @@ int main(void) {
   printf("Enter monthly payment: ");
   scanf("%f", &monthly_payment);
 
-  printf("\n");
-
   amount += amount * monthly_interest_percentage;
   amount -= monthly_payment;
-  printf("Balance remaining after first payment: $%.2f\n", amount);
+  printf("\nBalance remaining after first payment: $%.2f\n", amount);
 
   amount += amount * monthly_interest_percentage;
   amount -= monthly_payment;
