@@ -10,6 +10,10 @@ int main(void) {
   printf("Enter a number between 0 and 32767: ");
   scanf("%d", &i);
 
+  /*
+   * Although the text aulludes to this solution using only printf,
+   * it encourages the latter manual solution.
+   */
   // printf("In octal, your number is: %.5o\n", i);
 
   int d0 = i % 8;
