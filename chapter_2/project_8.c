@@ -14,11 +14,11 @@ int main(void) {
   printf("Enter interest rate: ");
   scanf("%f", &interest_rate);
 
-  float monthly_interest_percentage = (interest_rate / 100.0f) / 12.0f;
-
   float monthly_payment;
   printf("Enter monthly payment: ");
   scanf("%f", &monthly_payment);
+
+  float monthly_interest_percentage = (interest_rate / 100.0f) / 12.0f;
 
   amount += amount * monthly_interest_percentage;
   amount -= monthly_payment;
