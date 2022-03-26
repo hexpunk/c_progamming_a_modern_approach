@@ -4,65 +4,69 @@
  */
 
 #include <stdio.h>
-#include <ctype.h>
 
 int main(void) {
-  int score = 0;
   char input;
 
-  printf("Enter a word: ");
-  while((input = toupper(getchar())) != '\n') {
+  printf("Enter phone numer: ");
+  while((input = getchar()) != '\n') {
     switch (input) {
     case 'A':
-    case 'E':
-    case 'I':
-    case 'L':
-    case 'N':
-    case 'O':
-    case 'R':
-    case 'S':
-    case 'T':
-    case 'U':
-      score += 1;
+    case 'B':
+    case 'C':
+      putchar('2');
       break;
 
     case 'D':
-    case 'G':
-      score += 2;
-      break;
-
-    case 'B':
-    case 'C':
-    case 'M':
-    case 'P':
-      score += 3;
-      break;
-
+    case 'E':
     case 'F':
-    case 'H':
-    case 'V':
-    case 'W':
-    case 'Y':
-      score += 4;
+      putchar('3');
       break;
 
-    case 'K':
-      score += 5;
+    case 'G':
+    case 'H':
+    case 'I':
+      putchar('4');
       break;
 
     case 'J':
-    case 'X':
-      score += 8;
+    case 'K':
+    case 'L':
+      putchar('5');
       break;
 
-    case 'Q':
-    case 'Z':
-      score += 10;
+    case 'M':
+    case 'N':
+    case 'O':
+      putchar('6');
       break;
+
+    case 'P':
+    case 'Q':
+    case 'R':
+    case 'S':
+      putchar('7');
+      break;
+
+    case 'T':
+    case 'U':
+    case 'V':
+      putchar('8');
+      break;
+
+    case 'W':
+    case 'X':
+    case 'Y':
+    case 'Z':
+      putchar('9');
+      break;
+
+    default:
+      putchar(input);
     }
   }
 
-  printf("Scrabble value: %d\n", score);
+  putchar('\n');
 
   return 0;
 }
