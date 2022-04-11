@@ -29,6 +29,5 @@ int main(void) {
 
   printf(", %c.\n", first_initial);
 
-
   return 0;
 }
